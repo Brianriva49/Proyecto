@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Venta de teléfonos en RBRC Tecnologi. Xiaomi, Samsung y Apple.">
+  <title>RBRC Tecnologi | Venta de Teléfonos</title>
+
+  <!-- Fuente moderna de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Íconos de Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!-- Scroll suave -->
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    html {
+      scroll-behavior: smooth; /* Activar scroll suave */
+    }
+
+    body {
+      font-family: 'Inter', sans-serif; /* Fuente moderna */
+      margin: 0;
+      background: #f9f9f9; /* Fondo claro moderno */
+      color: #333;
+    }
+
+  .encabezado {
+  background-color: #001f2e; /* Fondo oscuro */
+  padding: 20px;
+  color: white;
+}
+
+.contenido-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.texto-central {
+  text-align: center;
+  flex: 10;
+}
+
+ .logotipo {
+      width: 100px; /* Ancho del logo */
+      height: auto; /* Altura automática */
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0 0 20px #00f5d4; /* Sombra al logo */
+      transition: transform 0.3s ease; /* Animación al pasar el cursor */
+    }
+    nav {
+      background: #022a3f;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #90e0ef;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffb703;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    #catalogo h2 {
+      text-align: center;
+      color: #001f2e;
+      font-size: 1.8em;
+      margin-bottom: 40px;
+    }
+
+    .marca h3 {
+      font-size: 1.4em;
+      border-left: 5px solid #00f5d4;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    .grid-productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .tarjeta {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .tarjeta img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .tarjeta p {
+      margin: 0;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .tarjeta strong {
+      color: #ff6f00;
+    }
+
+    footer {
+      background: #001f2e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-top: 4px solid #00f5d4;
+    }
+
+    footer a {
+      color: #90e0ef;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #ffb703;
+    }
+
+    /* Botón flotante de WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+      transition: transform 0.2s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado con logotipo -->
+ <header class="encabezado">
+  <div class="contenido-header">
+    <div class="texto-central">
+      <h1>RBRC TECNOLOGI</h1>
+      <p>Tena - Napo - Ecuador</p>
+    </div>
+    <img src="C:\Users\HP\OneDrive\Escritorio\html\imagen R\RBRCTec.png" alt="Logotipo RBRC Tecnologi" class="logotipo">
+  </div>
+</header>
+
+  <!-- Navegación -->
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#quienes-somos">¿Quiénes somos?</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+   
+  <!-- Carrusel de productos destacados -->
+  <section style="padding: 40px 20px; background: #e3f2fd;">
+  <h2 style="text-align: center; margin-bottom: 30px;">✨ Productos Destacados</h2>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-13t-pro-1.jpg" alt="Xiaomi 13T Pro" style="width: 100%; border-radius: 10px;">
+        <p style="text-align: center; margin-top: 10px;"><strong>Xiaomi 13T Pro</strong></p>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <img src="https://shop.samsung.com/latin/ecu/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/s/m/sm-1vlw60b41yr6hbnultra_set-cut-all_002.png" alt="Samsung S24 Ultra" style="width: 100%; border-radius: 10px;">
+        <p style="text-align: center; margin-top: 10px;"><strong>Galaxy S24 Ultra</strong></p>
+      </div>
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-max-1.jpg" alt="iPhone 15 Pro Max" style="width: 100%; border-radius: 10px;">
+        <p style="text-align: center; margin-top: 10px;"><strong>iPhone 15 Pro Max</strong></p>
+      </div>
+    </div>
+    <!-- Botones de navegación -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- Paginación -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+  <!-- Catálogo -->
+  <section id="catalogo">
+    <h2>🗂️ Catálogo por Marca</h2>
+
+    <div class="marca">
+      <h3>Xiaomi</h3>
+      <div class="grid-productos">
+        <div class="tarjeta">
+          <img src="https://cdn.smart-gsm.com/img/picture/big/xiaomi-poco-x6-pro.jpg" alt="POCO X6 Pro">
+          <p>POCO X6 Pro<br><strong>$329.99</strong></p>
+        </div>
+        <div class="tarjeta">
+          <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-13t-pro-1.jpg" alt="Xiaomi 13T Pro">
+          <p>Xiaomi 13T Pro<br><strong>$599.99</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="marca">
+      <h3>Samsung</h3>
+      <div class="grid-productos">
+        <div class="tarjeta">
+          <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a54-5g-1.jpg" alt="Galaxy A54">
+          <p>Galaxy A54<br><strong>$399.99</strong></p>
+        </div>
+        <div class="tarjeta">
+          <img src="https://shop.samsung.com/latin/ecu/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/s/m/sm-1vlw60b41yr6hbnultra_set-cut-all_002.png"alt="Galaxy S25 ULTRA">
+          <p>Galaxy S24 Ultra<br><strong>$1199.99</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="marca">
+      <h3>Apple</h3>
+      <div class="grid-productos">
+        <div class="tarjeta">
+          <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-1.jpg" alt="iPhone 14 Pro">
+          <p>iPhone 14 Pro<br><strong>$999.99</strong></p>
+        </div>
+        <div class="tarjeta">
+          <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-max-1.jpg" alt="iPhone 15 Pro Max">
+          <p>iPhone 15 Pro Max<br><strong>$1299.99</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 RBRC Tecnologi. Todos los derechos reservados.</p>
+    <p>Tel: 0963617774 | Dirección: Tena, Provincia de Napo</p>
+    <p><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></p>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/593963617774" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <!-- Swiper.js JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    spaceBetween: 30,
+    slidesPerView: 1,
+    breakpoints: {
+      768: {
+        slidesPerView: 2
+      },
+      1024: {
+        slidesPerView: 3
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
